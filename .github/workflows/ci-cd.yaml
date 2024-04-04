@@ -30,4 +30,4 @@ jobs:
       - name: Push Docker image to registry
         run: |
           docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-          docker push allankalema/cloud_computing-django:latest
+          docker push allankalema/cloud_computing-django
