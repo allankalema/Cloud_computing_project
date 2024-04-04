@@ -26,8 +26,3 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t allankalema/cloud_computing-django .
-
-      - name: Push Docker image to registry
-        run: |
-          docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}
-          docker push allankalema/cloud_computing-django
